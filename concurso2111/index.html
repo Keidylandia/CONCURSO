@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="styles.css">
+    <style>
+      /* Styles for small screens */
+      .my-element {
+        width: 100%;
+      }
+    
+      /* Media query for larger screens */
+      @media (min-width: 768px) {
+        .my-element {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="my-element"> <section class="principal container">
+        <div class="container__caixa">
+            <h1 class="container__titulo">Seja bem-vindo ao Cultive!</h1>
+            <img src="imagens/logo.png" alt="O combo+ é a junção do alura+ e o alura língua" class="container__imagem">
+            <a href="paginainicial.html" class="container__botao">Entrar</a>
+            <p class="container__aviso">Juntos, transformamos o mundo em um lugar melhor!</div>
+                <div class="slider">
+                    <div class="slides">
+            
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+            
+                        <div class="slide first">
+                            <img class="slide1" src="imagens/slider/1.jpg" alt="assimquecomeca">
+                        </div>
+                        <div class="slide">
+                            <img src="imagens/slider/2.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="imagens/slider/3.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="imagens/slider/4.jpg" alt="">
+                        </div>
+            
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+                    </div>
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    var counter = 1;
+                    setInterval(function(){
+                        document.getElementById('radio' + counter).checked = true;
+                        counter++;
+                        if(counter > 4){
+                            counter = 1;
+                        }
+                    }, 5000);
+                </script>
+            
+    </section>
+
+    <section class="container secundario">
+      <a href="https://www.tudogostoso.com.br/"> <img class="hometdgsts"src="https://terramagna.com.br/wp-content/uploads/2022/09/Maos-humanas-muda-solo-cultivo.jpg" alt="Um monitor e um celular com a alura plus aberta" class="secundario__imagem"> </a>
+        <div class="container__descricao">
+            <h2 class="descricao__titulo">Trabalhe Conosco!</h2>
+            <p class="descricao__texto">Aproveite o nosso website para nos ajudar a crescer, divulgando e informando as pessoas mais próximas a você.</p>
+        </div>
+    </section>
+
+    <section class="container secundario">
+        <div class="container__descricao">
+            <p class="descricao__texto">
+                Nossa empresa é conhecida mundialmente por nossos atos de cultivação, desejamos um meio-ambiente mais saudável para que nossas gerações futuras tenham uma qualidade de vida melhor em um futuro breve.
+            </p>
+            <a href="www.alura.com.br" class="container__botao secundario__botao" container>Conhecidos Mundialmente</a>
+        </div>
+        <img class="premium" src="imagens/pngkit_premium-png_4195984.png" alt="Tela do alura+ e alura língua" class="secundario__imagem">
+    </section>
+
+    <section class="container secundario">
+        <img class="dicas"src="https://www.zonacampo.com.ar/images/easyblog_articles/2192/b2ap3_amp_tecnologia-e-campo-2-766x401.jpg" alt="Notebook com a página do curso HTML5 e CSS3 da Alura aberta"
+            class="secundario__imagem">
+        <div class="container__descricao">
+            <h2 class="descricao__titulo">Baixe seus cursos</h2>
+            <p class="descricao__texto">Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com
+                você, até mesmo sem internet.</p>
+        </div>
+    </section>
+
+    <section class="dispositivos">
+        <h2 class="dispositivos__titulo">Fale Conosco!</h2>
+        <ul class="dispositivos__lista">
+            <li>
+                <img class="computador"src="imagens/computador.png" alt="Ícone de computador">
+                <h3 class="lista__item">Computador</h3>
+            </li>
+            <li>
+                <img class="celular"src="imagens/celular.png" alt="Ícone de celular">
+                <h3 class="lista__item">Celular</h3>
+            </li>
+        </ul>
+    </section>
+
+    <footer class="rodape">
+        <img src="imagens/logo.png" alt="Alura+" class="rodape__logo">
+        <ul class="rodape__lista">
+            <li class="lista__link">
+                <a href="#">Idioma</a>
+            </li>
+            <li class="lista__link">
+                <a href="#">Dispositivos compatíveis</a>
+            </li>
+            <li class="lista__link">
+                <a href="#">Contrato de assinatura</a>
+            </li>
+            <li class="lista__link">
+                <a href="#">Politica de privacidade</a>
+            </li>
+            <li class="lista__link">
+                <a href="#">Proteção de dados no Brasil</a>
+            </li>
+            <li class="lista__link">
+                <a href="#">Anuncios personalizados</a>
+            </li>
+            <li class="lista__link">
+                <a href="#">Ajuda</a>
+            </li>
+        </ul>
+        <p class="rodape__texto">® 2021 Alura, Alura+ e Alura Língua. Todos os direitos reservados. Serviço de
+            assinatura paga. Conteúdo sujeito a disponibilidade.</p>
+        <p class="rodape__texto">Alura+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O
+            serviço Alura+ é comercializado por Aovs Sistemas de Informática S.A., Rua Vergueiro, 3185 - Liberdade, São
+            Paulo - SP, 04101-300, Brasil e CNPJ 05.555.382/0001-33</p>
+    </footer>
+
+    
+</div>
+  </body>
+  
+</html>
